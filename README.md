@@ -1,5 +1,7 @@
 # file.lua
 
+[![Build Status](https://travis-ci.org/gummesson/file.lua.png?branch=master)](https://travis-ci.org/gummesson/file.lua)
+
 Basic file functions for Lua.
 
 ## Why?
