@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>file</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="l-header">
+      <h1 class="l-logo">
+        <a href="index.html" class="link--hidden">file</a>
+      </h1>
+      <p class="smallprint">Basic file functions</p>
+    </header>
+    <article class="l-content">
+      <p><strong>file</strong> is a minimal library for working with files in <a href="http://www.lua.org/">Lua</a>.</p>
+      <p><a href="docs/index.html">The annotated source code is available</a>.
+<h2>API</h2>
+<h3>file.exists</h3>
+<pre><code class="lua">file.exists(path)</code></pre>
+<p>Determines if the file&#39;s <code>path</code> exists. Returns either <code>true</code> or <code>false</code>.</p>
+<h4>Example</h4>
+<pre><code class="lua">file.exists(<span class="string">'test.txt'</span>)</code></pre>
+<h3>file.read</h3>
+<pre><code class="lua">file.read(path[, mode])</code></pre>
+<p>Returns the content of the file by reading the given <code>path</code> and <code>mode</code>.</p>
+<h4>Example</h4>
+<pre><code class="lua">file.read(<span class="string">'test.txt'</span>)</code></pre>
+<h3>file.write</h3>
+<pre><code class="lua">file.write(path, content[, mode])</code></pre>
+<p>Writes to the file with the given <code>path</code>, <code>content</code> and <code>mode</code>.</p>
+<h4>Example</h4>
+<pre><code class="lua">file.write(<span class="string">'test.txt'</span>, <span class="string">'Hello world!'</span>)</code></pre>
+<h3>file.copy</h3>
+<pre><code class="lua">file.copy(src, dest)</code></pre>
+<p>Copies the file by reading the <code>src</code> and writing it to the <code>dest</code>.</p>
+<h4>Example</h4>
+<pre><code class="lua">file.copy(<span class="string">'test.txt'</span>, <span class="string">'test-copy.txt'</span>)</code></pre>
+<h3>file.move</h3>
+<pre><code class="lua">file.move(src, dest)</code></pre>
+<p>Moves the file from <code>src</code> to the <code>dest</code>.</p>
+<h4>Example</h4>
+<pre><code class="lua">file.move(<span class="string">'test-copy.txt'</span>, <span class="string">'test/test.txt'</span>)</code></pre>
+<h3>file.remove</h3>
+<pre><code class="lua">file.remove(path)</code></pre>
+<p>Remove the file from the given <code>path</code>.</p>
+<h4>Example</h4>
+<pre><code class="lua">file.remove(<span class="string">'test.txt'</span>)</code></pre>
+    </article>
+    <footer class="l-footer">
+      <p class="smallprint">Another small thing by <a href="http://ellengummesson.com/">Ellen Gummesson</a>. <a href="https://github.com/gummesson/file.lua">Source on GitHub</a>.</p>
+    </footer>
+  </div>
+</body>
+</html>
