@@ -86,7 +86,7 @@ file.move('test-copy.txt', 'test/test.txt')
 file.remove(path)
 ~~~
 
-Remove the file from the given `path`.
+Removes the file from the given `path`.
 
 #### Example
 
