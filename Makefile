@@ -9,10 +9,11 @@ dev-win:
 	@luarocks install busted
 
 test:
-	@echo "Running tests..."
+	@echo "Running the tests..."
 	@busted
 
 docs:
+	@echo "Generating the documentation..."
 	@docco src/file.lua
 	@cp docs/file.html ../gh-pages/docs/index.html
 	@cp docs/docco.css ../gh-pages/docs
