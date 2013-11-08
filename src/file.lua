@@ -7,6 +7,10 @@
 --  **Source:** [GitHub](https://github.com/gummesson/file.lua)
 --
 
+-- ## References
+
+local io, os = io, os
+
 -- ## file
 --
 -- The namespace.
