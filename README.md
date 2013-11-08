@@ -8,6 +8,12 @@ Basic file functions for Lua.
 
 Because learning a new language is still kind of fun.
 
+## Installation
+
+~~~
+luarocks build https://raw.github.com/gummesson/file.lua/master/file-dev-1.rockspec
+~~~
+
 ## API
 
 ### file.exists
