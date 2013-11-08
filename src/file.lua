@@ -9,7 +9,7 @@
 
 -- ## References
 
-local io, os = io, os
+local io, os, error = io, os, error
 
 -- ## file
 --
